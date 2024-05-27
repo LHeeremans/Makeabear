@@ -79,9 +79,9 @@ img {
 
 #shirtsStapelen img {
     position: absolute;
-    margin-left: 21.3%;
-    margin-top: 3.8%;
-    width: 70%;
+    margin-left: 17.3%;
+    margin-top: 21.4%;
+    width: 28%;
     display: none;
 }
 
@@ -92,4 +92,11 @@ img {
 
 .show{
     display: block !important;
+}
+
+button {
+    padding: 1em 2em;
+    font-size: 16pt;
+    margin-left: 9em;
+    margin-top: 2em;
 }

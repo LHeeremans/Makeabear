@@ -67,7 +67,7 @@ let strik= document.querySelector("#strik")
 let hoed= document.querySelector("#hoed")
 let bril= document.querySelector("#bril")
 
-let menuStrik = document.querySelector("#menuStrik")
+let menuStrik = document.querySelector("#menuStrik");
 let menuHoed = document.querySelector("#menuHoed")
 let menuBril = document.querySelector("#menuBril")
 
@@ -80,12 +80,12 @@ menuHoed.addEventListener("click", ()=>{
 menuBril.addEventListener("click", ()=>{
     bril.classList.toggle("show")
 })
-/*
+
 let cropTop= document.querySelector("#croptop")
 let shirt= document.querySelector("#streepjes")
 let sjaal= document.querySelector("#sjaal")
 
-let menuCroptop = document.querySelector("#menuCroptop")
+let menuCroptop = document.querySelector("#menuCropTop");
 let menuStreepjes = document.querySelector("#menuStreepjes")
 let menuSjaal = document.querySelector("#menuSjaal")
 
@@ -98,4 +98,20 @@ menuStreepjes.addEventListener("click", ()=>{
 menuSjaal.addEventListener("click", ()=>{
     sjaal.classList.toggle("show")
 })
-*/
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const audioElement = document.getElementById('audioElement');
+    const audioControlButton = document.getElementById('audioControlButton');
+
+    audioControlButton.addEventListener('click', () => {
+        if (audioElement.paused) {
+            audioElement.play();
+            audioControlButton.textContent = 'Stop Audio';
+        } else {
+            audioElement.pause();
+            audioElement.currentTime = 0; // reset audio to the beginning
+            audioControlButton.textContent = 'Play Audio';
+        }
+    });
+});
