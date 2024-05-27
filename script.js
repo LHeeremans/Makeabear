@@ -62,7 +62,7 @@ function lichtedonkerBeer() {
 }
 
 donkereBeerOptie.addEventListener('click', lichtedonkerBeer);
-/*
+
 let strik= document.querySelector("#strik")
 let hoed= document.querySelector("#hoed")
 let bril= document.querySelector("#bril")
@@ -72,17 +72,17 @@ let menuHoed = document.querySelector("#menuHoed")
 let menuBril = document.querySelector("#menuBril")
 
 menuStrik.addEventListener("click", ()=>{
-    strik.classList.toggle("zichtbaar")
+    strik.classList.toggle("show")
 })
 menuHoed.addEventListener("click", ()=>{
-    hoed.classList.toggle("zichtbaar")
+    hoed.classList.toggle("show")
 })
 menuBril.addEventListener("click", ()=>{
-    bri.classList.toggle("zichtbaar")
+    bril.classList.toggle("show")
 })
 
-*/
 
+/*
 document.addEventListener('DOMContentLoaded', () => {
     // Functie om de zichtbaarheid van een accessoire te toggelen
     const toggleVisibility = (element) => {
@@ -101,13 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+*/
 
-const achtergrondMenuItems = document.querySelectorAll('.achtergrond-menu');
-achtergrondMenuItems.forEach(menuItem => {
-    menuItem.addEventListener('click', () => {
-        const newBackground = menuItem.getAttribute('data-src');
-        document.body.style.backgroundImage = `url(${newBackground})`;
-    });
-});
 
 

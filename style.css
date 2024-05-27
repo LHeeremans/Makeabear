@@ -64,28 +64,19 @@ img {
     display: none;
 }
 
+#accessoiresStapelen img {
+    position: absolute;
+    margin-left: 21.3%;
+    margin-top: 3.8%;
+    width: 20%;
+    display: none;
+}
 
-.beerStandaard {
+
+.menuAccessoires {
     z-index: 1;
 }
 
-.beerAccessoires {
-    z-index: 2;
-}
-
-.strik img {
-    margin-top: 80%;
-    margin-left: 80%;
-    width: 5em;
-
-}
-
-.hoed {
-    margin-top: -10%;
-    margin-left: 40%;
-    width: 8em;
-}
-
-.bril {
-   margin-left: 30em;
+.show{
+    display: block !important;
 }
