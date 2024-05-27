@@ -1,0 +1,91 @@
+body {
+    background-image: url(Beer+Alles/background1.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 30pt;
+    padding-bottom: 22%;
+}
+
+p {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+#schema {
+    padding-left: 10%;
+}
+
+article {
+    width: 50vw;
+    display: inline;
+    padding-left: 50%;
+    padding-bottom: 7em;
+}
+
+article img {
+    display: inline;
+}
+
+img {
+    display: block;
+    width: 5em;
+}
+
+.beerStandaard {
+    width: 30em;
+    height: 32em;
+    padding-top: 23%;
+    padding-left: 50%;
+}
+
+#hint {
+    padding-top: 4em;
+    justify-content: right;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: italic;
+}
+
+.zichtbaar {
+    display: block;
+}
+
+.onzichtbaar {
+    display: none;
+}
+
+
+.beerStandaard {
+    z-index: 1;
+}
+
+.beerAccessoires {
+    z-index: 2;
+}
+
+.strik img {
+    margin-top: 80%;
+    margin-left: 80%;
+    width: 5em;
+
+}
+
+.hoed {
+    margin-top: -10%;
+    margin-left: 40%;
+    width: 8em;
+}
+
+.bril {
+   margin-left: 30em;
+}
