@@ -5,6 +5,7 @@ let kop = document.querySelector("h1")
 const introductie = document.querySelector("h1")
 function verandertitel() {
     kop.textContent = bericht
+    kop.classList.add("slide-in")
 }
 introductie.addEventListener("mouseenter", verandertitel)
 
@@ -99,19 +100,24 @@ menuSjaal.addEventListener("click", ()=>{
     sjaal.classList.toggle("show")
 })
 
-
+//via chatgpt eigen onderzoek//
 document.addEventListener('DOMContentLoaded', () => {
     const audioElement = document.getElementById('audioElement');
     const audioControlButton = document.getElementById('audioControlButton');
 
     audioControlButton.addEventListener('click', () => {
         if (audioElement.paused) {
+            audioElement.currentTime = 14;
             audioElement.play();
             audioControlButton.textContent = 'Stop Audio';
+            partyTime.textContent = "PartyTime!!";
+            partyTime.style.display = "block";
         } else {
             audioElement.pause();
             audioElement.currentTime = 0; // reset audio to the beginning
             audioControlButton.textContent = 'Play Audio';
+            partyTime.style.display = "none";
         }
     });
 });
+//
