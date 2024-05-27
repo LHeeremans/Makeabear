@@ -67,7 +67,7 @@ let strik= document.querySelector("#strik")
 let hoed= document.querySelector("#hoed")
 let bril= document.querySelector("#bril")
 
-let menuStrik = document.querySelector("#menuStrik");
+let menuStrik = document.querySelector("#menuStrik")
 let menuHoed = document.querySelector("#menuHoed")
 let menuBril = document.querySelector("#menuBril")
 
@@ -80,28 +80,22 @@ menuHoed.addEventListener("click", ()=>{
 menuBril.addEventListener("click", ()=>{
     bril.classList.toggle("show")
 })
-
-
 /*
-document.addEventListener('DOMContentLoaded', () => {
-    // Functie om de zichtbaarheid van een accessoire te toggelen
-    const toggleVisibility = (element) => {
-        element.classList.toggle('onzichtbaar');
-        element.classList.toggle('zichtbaar');
-    };
+let cropTop= document.querySelector("#croptop")
+let shirt= document.querySelector("#streepjes")
+let sjaal= document.querySelector("#sjaal")
 
-    // Event listeners voor accessoires in het menu (bril, hoed, strik)
-    const accessoiresMenuItems = document.querySelectorAll('.beerAccessoiresMenu');
-    accessoiresMenuItems.forEach(menuItem => {
-        menuItem.addEventListener('click', () => {
-            const accessoireId = menuItem.id.replace('menu', '');
-            const accessoireElement = document.getElementById(accessoireId);
-            toggleVisibility(accessoireElement);
-        });
-    });
-});
+let menuCroptop = document.querySelector("#menuCroptop")
+let menuStreepjes = document.querySelector("#menuStreepjes")
+let menuSjaal = document.querySelector("#menuSjaal")
 
+menuCroptop.addEventListener("click", ()=>{
+    cropTop.classList.toggle("show")
+})
+menuStreepjes.addEventListener("click", ()=>{
+    shirt.classList.toggle("show")
+})
+menuSjaal.addEventListener("click", ()=>{
+    sjaal.classList.toggle("show")
+})
 */
-
-
-
