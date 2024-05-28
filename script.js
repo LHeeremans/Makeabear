@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             audioControlButton.textContent = 'Stop Audio';
             partyTime.textContent = "PartyTime!!";
             partyTime.style.display = "block";
+            partyTime.classList.add("swing")
         } else {
             audioElement.pause();
             audioElement.currentTime = 0; // reset audio to the beginning
@@ -121,3 +122,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 //
+
+const achtergrondHartjes = document.querySelector("#hartjes")
+const achtergrondBloemetjes = document.querySelector("#bloemetjes")
+const achtergrondSterretjes = document.querySelector("#sterretjes")
+
+achtergrondHartjes.addEventListener("click", () => {
+    document.body.style.backgroundImage = "url(Beer+Alles/background2.png)";
+});
+
+achtergrondBloemetjes.addEventListener("click", () => {
+    document.body.style.backgroundImage = "url(Beer+Alles/background1.jpg)";
+});
+
+achtergrondSterretjes.addEventListener("click", () => {
+    document.body.style.backgroundImage = "url(Beer+Alles/background3.jpg)";
+});
+
+
+
+
+
