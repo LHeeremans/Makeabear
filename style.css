@@ -22,9 +22,66 @@ main {
     display: flex;
 }
 
+button {
+    padding: 1em 2em;
+    font-size: 16pt;
+    margin-left: 9em;
+    margin-top: 2em;
+}
+
+input,
+button {
+    font-size: 12pt;
+    margin-right: 10%;
+}
+
 #schema {
     padding-left: 8%;
 }
+
+#hint {
+    padding-top: 4em;
+    justify-content: right;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: italic;
+}
+
+#menuAccessoires {
+    z-index: 1;
+}
+
+#menuShirts {
+    z-index: 1;
+}
+
+#partyTime {
+    font-size: 34pt;
+    color: fuchsia;
+    display: none;
+    margin-left: -3em;
+    margin-top: -1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#tekstbalk {
+    margin-top: 60%;
+    margin-left: 70%;
+}
+
+#tekstbalk button {
+    margin-left: 10em;
+    padding: 1%;
+}
+
+
+#displayText {
+    font-size: 30pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10%;
+    color: darkblue;
+}
+
 
 article {
     width: 40vw;
@@ -42,40 +99,12 @@ img {
     width: 5em;
 }
 
-.beerStandaard {
-    width: 30em;
-    height: 32em;
-    padding-top: 23%;
-    padding-left: 50%;
-}
-
-#hint {
-    padding-top: 4em;
-    justify-content: right;
-    text-align: right;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-style: italic;
-}
-
-.zichtbaar {
-    display: block;
-}
-
-.onzichtbaar {
-    display: none;
-}
-
 #accessoiresStapelen img {
     position: absolute;
     margin-left: 21.3%;
     margin-top: 3.8%;
     width: 20%;
     display: none;
-}
-
-
-#menuAccessoires {
-    z-index: 1;
 }
 
 #shirtsStapelen img {
@@ -87,40 +116,25 @@ img {
 }
 
 
-#menuShirts {
-    z-index: 1;
+.beerStandaard {
+    width: 30em;
+    height: 32em;
+    padding-top: 23%;
+    padding-left: 50%;
 }
 
-.show{
-    display: block !important;
+
+.zichtbaar {
+    display: block;
 }
 
-button {
-    padding: 1em 2em;
-    font-size: 16pt;
-    margin-left: 9em;
-    margin-top: 2em;
-}
-
-#partyTime {
-    font-size: 34pt;
-    color: fuchsia;
+.onzichtbaar {
     display: none;
-    margin-left: -3em;
-    margin-top: -1em;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-
 }
 
-@keyframes slideDown {
-    from{
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+
+.show {
+    display: block !important;
 }
 
 .slide-in {
@@ -128,26 +142,14 @@ button {
 }
 
 
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
 
-#tekstbalk {
-    margin: 20px;
-    margin-top: 60%;
-    margin-left: 70%;
-}
-
-#tekstbalk button {
-    margin-left: 10em;
-    padding: 1%;
-}
-
-input, button {
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-#displayText {
-    font-size: 30pt;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 20px;
-    color: darkblue;
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
