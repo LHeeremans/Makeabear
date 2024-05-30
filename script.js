@@ -1,13 +1,42 @@
 console.log("Hallo Berry!")
+
+const introductie = document.querySelector("h1")
+
+const donkereBeerOptie = document.querySelector("#donkerbruin")
+const lichteBeerOptie = document.querySelector("#lichtbruin")
+const koffieBeerOptie = document.querySelector("#koffiebruin")
+
+const groteKoffieBeer = document.querySelector("#koffiebruinBeer")
+const groteDefaultBeer = document.querySelector("#defaultBeer")
+const groteDonkereBeer = document.querySelector("#donkerbruinBeer")
+
+const achtergrondHartjes = document.querySelector("#hartjes")
+const achtergrondBloemetjes = document.querySelector("#bloemetjes")
+const achtergrondSterretjes = document.querySelector("#sterretjes")
+
 let bericht = "Welkom Berry!"
 let kop = document.querySelector("h1")
 
-const introductie = document.querySelector("h1")
+let strik = document.querySelector("#strik")
+let hoed = document.querySelector("#hoed")
+let bril = document.querySelector("#bril")
+
+let menuStrik = document.querySelector("#menuStrik")
+let menuHoed = document.querySelector("#menuHoed")
+let menuBril = document.querySelector("#menuBril")
+
+let cropTop = document.querySelector("#croptop")
+let shirt = document.querySelector("#streepjes")
+let sjaal = document.querySelector("#sjaal")
+
+let menuCroptop = document.querySelector("#menuCropTop")
+let menuStreepjes = document.querySelector("#menuStreepjes")
+let menuSjaal = document.querySelector("#menuSjaal")
+
 function verandertitel() {
     kop.textContent = bericht
     kop.classList.add("slide-in")
 }
-introductie.addEventListener("mouseenter", verandertitel)
 
 function showHint() {
     hint.textContent = "Klik op de items om je beer aan te passen!"
@@ -19,23 +48,12 @@ function hideHint() {
 }
 showHint()
 
-
-const donkereBeerOptie = document.querySelector("#donkerbruin")
-const lichteBeerOptie = document.querySelector("#lichtbruin")
-const koffieBeerOptie = document.querySelector("#koffiebruin")
-
-const groteKoffieBeer = document.querySelector("#koffiebruinBeer");
-const groteDefaultBeer = document.querySelector("#defaultBeer")
-const groteDonkereBeer = document.querySelector("#donkerbruinBeer")
-
 function koffieBeer() {
     groteKoffieBeer.classList.add("zichtbaar")
     groteKoffieBeer.classList.remove("onzichtbaar")
     groteDefaultBeer.classList.add("onzichtbaar")
     groteDonkereBeer.classList.add("onzichtbaar")
 }
-
-koffieBeerOptie.addEventListener('click', koffieBeer);
 
 function donkerBeer() {
     groteDonkereBeer.classList.add("zichtbaar")
@@ -44,16 +62,12 @@ function donkerBeer() {
     groteKoffieBeer.classList.add("onzichtbaar")
 }
 
-donkereBeerOptie.addEventListener('click', donkerBeer);
-
 function lichteBeer() {
     groteDefaultBeer.classList.add("zichtbaar")
     groteDefaultBeer.classList.remove("onzichtbaar")
     groteDonkereBeer.classList.add("onzichtbaar")
     groteDonkereBeer.classList.add("onzichtbaar")
 }
-
-lichteBeerOptie.addEventListener('click', lichteBeer);
 
 function lichtedonkerBeer() {
     groteDonkereBeer.classList.add("zichtbaar")
@@ -62,43 +76,42 @@ function lichtedonkerBeer() {
     groteDefaultBeer.classList.add("onzichtbaar")
 }
 
+introductie.addEventListener("mouseenter", verandertitel)
+
+koffieBeerOptie.addEventListener('click', koffieBeer);
+donkereBeerOptie.addEventListener('click', donkerBeer);
 donkereBeerOptie.addEventListener('click', lichtedonkerBeer);
+lichteBeerOptie.addEventListener('click', lichteBeer);
 
-let strik= document.querySelector("#strik")
-let hoed= document.querySelector("#hoed")
-let bril= document.querySelector("#bril")
-
-let menuStrik = document.querySelector("#menuStrik");
-let menuHoed = document.querySelector("#menuHoed")
-let menuBril = document.querySelector("#menuBril")
-
-menuStrik.addEventListener("click", ()=>{
+menuStrik.addEventListener("click", () =>{
     strik.classList.toggle("show")
 })
-menuHoed.addEventListener("click", ()=>{
+menuHoed.addEventListener("click", () =>{
     hoed.classList.toggle("show")
 })
-menuBril.addEventListener("click", ()=>{
+menuBril.addEventListener("click", () =>{
     bril.classList.toggle("show")
 })
 
-let cropTop= document.querySelector("#croptop")
-let shirt= document.querySelector("#streepjes")
-let sjaal= document.querySelector("#sjaal")
-
-let menuCroptop = document.querySelector("#menuCropTop");
-let menuStreepjes = document.querySelector("#menuStreepjes")
-let menuSjaal = document.querySelector("#menuSjaal")
-
-menuCroptop.addEventListener("click", ()=>{
+menuCroptop.addEventListener("click",() =>{
     cropTop.classList.toggle("show")
 })
-menuStreepjes.addEventListener("click", ()=>{
+menuStreepjes.addEventListener("click",() =>{
     shirt.classList.toggle("show")
 })
-menuSjaal.addEventListener("click", ()=>{
+menuSjaal.addEventListener("click", () =>{
     sjaal.classList.toggle("show")
 })
+
+achtergrondHartjes.addEventListener("click", () =>{
+    document.body.style.backgroundImage = "url(Beer+Alles/background2.png)";
+});
+achtergrondBloemetjes.addEventListener("click", () =>{
+    document.body.style.backgroundImage = "url(Beer+Alles/background1.jpg)";
+});
+achtergrondSterretjes.addEventListener("click", () =>{
+    document.body.style.backgroundImage = "url(Beer+Alles/background3.jpg)";
+});
 
 //via chatgpt eigen onderzoek//
 document.addEventListener('DOMContentLoaded', () => {
@@ -122,24 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 //
 
-const achtergrondHartjes = document.querySelector("#hartjes")
-const achtergrondBloemetjes = document.querySelector("#bloemetjes")
-const achtergrondSterretjes = document.querySelector("#sterretjes")
-
-achtergrondHartjes.addEventListener("click", () => {
-    document.body.style.backgroundImage = "url(Beer+Alles/background2.png)";
-});
-
-achtergrondBloemetjes.addEventListener("click", () => {
-    document.body.style.backgroundImage = "url(Beer+Alles/background1.jpg)";
-});
-
-achtergrondSterretjes.addEventListener("click", () => {
-    document.body.style.backgroundImage = "url(Beer+Alles/background3.jpg)";
-});
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const inputText = document.getElementById('inputText');
     const submitButton = document.getElementById('submitButton');
@@ -151,4 +146,3 @@ document.addEventListener('DOMContentLoaded', () => {
         inputText.value = ''; 
     });
 });
-
