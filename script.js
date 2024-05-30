@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
             audioControlButton.textContent = 'Stop Audio';
             partyTime.textContent = "PartyTime!!";
             partyTime.style.display = "block";
-            partyTime.classList.add("swing")
         } else {
             audioElement.pause();
             audioElement.currentTime = 0; // reset audio to the beginning
@@ -141,5 +140,15 @@ achtergrondSterretjes.addEventListener("click", () => {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const inputText = document.getElementById('inputText');
+    const submitButton = document.getElementById('submitButton');
+    const displayText = document.getElementById('displayText');
 
+    submitButton.addEventListener('click', () => {
+        const userInput = inputText.value;
+        displayText.textContent = userInput;
+        inputText.value = ''; 
+    });
+});
 

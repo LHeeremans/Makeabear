@@ -23,11 +23,11 @@ main {
 }
 
 #schema {
-    padding-left: 10%;
+    padding-left: 8%;
 }
 
 article {
-    width: 50vw;
+    width: 40vw;
     display: inline;
     padding-left: 50%;
     padding-bottom: 7em;
@@ -125,4 +125,29 @@ button {
 
 .slide-in {
     animation: slideDown 1s ease-out;
+}
+
+
+
+#tekstbalk {
+    margin: 20px;
+    margin-top: 60%;
+    margin-left: 70%;
+}
+
+#tekstbalk button {
+    margin-left: 10em;
+    padding: 1%;
+}
+
+input, button {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#displayText {
+    font-size: 30pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+    color: darkblue;
 }
